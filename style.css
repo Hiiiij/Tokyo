@@ -1,0 +1,296 @@
+/*removing global styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    
+}
+body{
+    
+font-family: 'Lato', sans-serif;
+
+}
+h1 {
+    font-size: 2.8rem;
+}
+
+li, 
+button,
+label,
+input,
+p {
+    font-size: 1.6rem;
+}
+h2 {
+    font-size: 3.5rem;
+}
+h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+h4, h5 {
+    font-size: 1.6rem;
+}
+button{
+    padding: 2rem 6rem;
+    background: #ccff90;
+    border: none;
+    color: grey;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out 0.2s;
+    
+}
+button:hover{
+    background: #85c041;
+    color: whitesmoke;
+    
+  
+}
+a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+/* Nav section with Hero */
+.main-head{
+    background: #a871e8;
+    color: whitesmoke
+}
+nav {
+display:flex;
+flex-wrap: wrap;
+width: 90%;
+margin: auto;
+padding: 2rem;
+min-height: 10vh;
+align-items: center;
+
+
+}
+nav ul {
+display: flex;
+flex: 1 1 40rem;
+align-items: center;
+list-style: none;
+}
+#logo {
+flex: 1 1 40rem;
+font-family: 'Pattaya', sans-serif;
+
+}
+.hero{
+    min-height: 90vh;
+
+    background: linear-gradient(rgba(127, 87, 221, 0.2), transparent), url('./img/landing-page.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h3{
+    padding: 3rem;
+}
+/* locations section */
+#locations { 
+    min-height: 100vh;
+    background: linear-gradient(rgba(127, 87, 221, 0.2), transparent),url('./img/new-york-page.png');
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+   
+}
+.locations-head{
+    width:90%;
+    margin: auto;
+    
+}
+.locations-head h2{
+    padding: 4rem 0rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.4rem ;
+    color:rgb(91, 38, 129);
+    /* text-align: center; */
+    }
+    .locations-head h3{
+        padding: 3rem 2rem;
+       background: linear-gradient(#4D1EE8,#D31088);
+       background-clip: text;
+       -webkit-text-fill-color: transparent;
+      } 
+      .cloud {
+          position: absolute;
+          top:0%;
+          right:0%;
+          animation: cloudAnimation 10s infinite alternate ease-in-out;
+      }
+      .moving-cloud-1{
+          z-index: -1;
+         
+        /* animation: cloudAnimation 10s infinite alternate ease-in-out; */
+     }
+      .moving-cloud-2{
+      top: 20%;
+     opacity: 0.4;
+      z-index: -2;
+      /* animation: cloudAnimation 5s infinite alternate ease-in-out; */
+    }
+    .locations-head h3{
+        background: rgb(60, 6, 146, 0.8);
+        -webkit-text-fill-color: rgb(214, 207, 226);
+        
+        
+        
+    }
+    
+
+      @keyframes cloudAnimation {
+         from { 
+             transform: translate(20%, -10%);
+             }
+         to{ 
+             transform: translate(0%,0%);
+            }
+      }
+
+      /* Benefits section*/
+      .benefits-head{
+          background:rgb(60, 6, 146, 0.2);
+          padding:3rem;
+          min-height: 30vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: whitesmoke;
+          
+      }
+.benefits-head h3{
+    padding:2rem;
+}
+.cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    /* background: #ccff90; */
+    text-align: center;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.cards img {
+    max-width: 15%;
+    margin: 2rem;
+}
+.card h4, .card p{
+    padding: 1rem;
+}
+
+.card-icon {
+background: #ccff90;
+}
+ #contact {
+     min-height: 100vh;
+     background: linear-gradient(rgba(127, 87, 221, 0.2), transparent),url('/img/contact-mountain.png'); 
+     background-size: cover;
+     background-repeat: no-repeat;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+    
+ }
+ .form-wrapper {
+ background:(136, 85, 145, 0.2);
+ color:rgb(136, 85, 231);
+ width: 50%;
+ border-radius: 20px;
+ }
+ .form-head {
+     text-align: center;
+     padding:3rem;
+ }
+ .name-form, .email-form {
+     padding: 2rem;
+     text-align: center;
+     align-items: center;
+    
+ }
+ .form-wrapper label {
+     margin: 0rem, 3rem;
+ }
+ .form-wrapper button{
+     width: 100%;
+     padding: 2rem;
+     margin-top: 4rem;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius:20px;
+ }
+ .form-wrapper input {
+     padding: 1rem 3rem;
+ }
+ footer{
+     color: whitesmoke;
+     background: rgb(91, 38, 129,1);
+ }
+ .footer-wrapper {
+     display: flex;
+     padding: 2rem;
+     width: 90%;
+     margin: auto;
+     align-items: center;
+     min-height: 10vh;
+     flex-wrap: wrap;
+ }
+ footer h5 {
+    flex: 1 1 40rem;  
+ }
+ footer ul {
+     display: flex;
+     list-style: none;
+     flex: 1 1 40rem;
+     justify-content: space-between;
+     align-items: center;
+ }
+ /* nav {
+     text-align: center;
+ } */
+/* /* Media query  */
+@media screen and (max-width: 932px){
+    html {
+        font-size: 45%;
+    }
+    nav {
+        text-align: center;
+        
+    }
+    #logo {padding: 1rem;
+
+    }
+    .cloud {
+        height: 40rem;
+        pointer-events: none;
+    }
+    .locations-head h2 {
+        text-align: center;
+    }
+}
